@@ -3,296 +3,703 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pragadeeswaran P - Portfolio</title>
     
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet"> 
 
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <!-- Customized Stylesheet -->
+    <link href="css/modern-style.css" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
+<body>
     <!-- Navbar Start -->
-    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-        <a href="index.html" class="navbar-brand ml-lg-3">
-            <h1 class="m-0 display-5"><span class="text-primary">Pragadeeswaran </span>P</h1>
-        </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-            <div class="navbar-nav m-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#qualification" class="nav-item nav-link">Qualification</a>
-                <a href="#skill" class="nav-item nav-link">Skill</a> 
-                <a href="#blog" class="nav-item nav-link">Blog</a>                
-            </div>
+    <nav class="modern-navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">Pragadeeswaran</span>
+                <span class="logo-dot">.</span>
+                <span class="logo-text">P</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
         </div>
     </nav>
     <!-- Navbar End -->
 
 
-    <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">                
-                </div>
-                <div class="col-lg-7 text-center text-lg-left">
-                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
-                    <h1  style= "font-size:37px; color: white;">Pragadeeswaran P</h1>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-                    <div class="typed-text d-none"> Front End Web Developer, Android App developer</div>
-                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="cv/Pragadeeswaran.pdf"class="btn btn-outline-light mr-5">Download CV</a>
+    <!-- Hero Section Start -->
+    <section class="hero-section" id="home">
+        <div class="particles-js" id="particles-js"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text" data-aos="fade-up">
+                    <h3 class="hero-greeting">Hello, I'm</h3>
+                    <h1 class="hero-name">Pragadeeswaran P</h1>
+                    <div class="hero-title">
+                        <span class="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Junior Software Engineer specializing in Java Full-Stack Development. Professionally working with Spring Boot, 
+                        REST APIs, and MySQL/PostgreSQL. Passionate about technology with hands-on experience in Python, Android (Kotlin/Java), 
+                        and Flutter through personal projects.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary">Get In Touch</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/pragadeeswaran-p-0669a9234" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Pragadee2605" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Header End -->
-
-
-    <!-- About Start -->
-    <div class="container-fluid py-5" id="about">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
-                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="img/profile.jpg" alt="">
-                </div>
-                <div class="col-lg-7">
-                    <p style="font-size: 20px; font-family: Georgia, 'Times New Roman', Times, serif;line-height: 1.5;letter-spacing: 1px;text-align: justify;">Passionate about leveraging my skills in <b>Front End Web development, Data Analysis and Android App development</b> to contribute meaningfully to the success of my career, I am dedicated to creating impactful solutions and continuously pushing the boundaries of my abilities.I am a highly motivated and technically skilled individual seeking opportunities to kickstart my career in the dynamic field of Information Technology. I am passionate about solving complex problems, staying updated with emerging technologies, and contributing to innovative projects.</p>
-                    <div class="row mb-3">
-                        <div class="col-sm-6 py-2"><h5>Name: <span class="text-secondary">Pragadeeswaran P</span></h5></div>
-                        <div class="col-sm-6 py-2"><h5>Birthday: <span class="text-secondary">26 May 2004</span></h5></div>
-                        <div class="col-sm-6 py-2"><h5>Degree: <span class="text-secondary">BTech IT</span></h5></div>
-                        <div class="col-sm-6 py-2"><h5>Experience: <span class="text-secondary">Fresher</span></h5></div>
-                        <div class="col-sm-6 py-2"><h5>Phone: <span class="text-secondary">9363260454</span></h5></div>
-                        <div class="col-sm-6 py-2"><h5>Email: <span class="text-secondary">pragadeeswaranp9791@gmail.com</span></h5></div>
-                    </div>
-                </div>
-            </div>
+        <div class="scroll-down">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </div>
-    </div>
-    <!-- About End -->
+    </section>
+    <!-- Hero Section End -->
 
 
-    <!-- Qualification Start -->
-    <div class="container-fluid py-5" id="qualification">
+    <!-- About Section Start -->
+    <section class="about-section" id="about">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
+            <div class="section-title" data-aos="fade-up">
+                <span class="title-bg">About</span>
+                <h2>About <span>Me</span></h2>
+                <div class="title-line"></div>
             </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h3 class="mb-4">My Education</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">BTech  In IT</h5>
-                            <p class="mb-2"><strong>SRM Valliammai Engineering College</strong> | <small>2021- 2025</small></p>
-                            <P>I learned the basic concept such as <b> Data Structure, Object Oriented, Networking, Machine learning</b>.This helps me build a strong career aligned with my passion</P>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">12th</h5>
-                            <p class="mb-2"><strong>Saratha Matric Higher Secondary School</strong> | <small>2020 - 2021</small></p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">10th</h5>
-                            <p class="mb-2"><strong>Saratha Matric Higher Secondary School</strong> | <small>2018 - 2019</small></p>
-                        </div>
-                    </div>
-                    <h3 class="mb-4">Internship</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Android App devetopment</h5>
-                            <p class="mb-2"><strong> Skill Vertex</strong> </p>
-                            <P>I learned the fundamentals of developing Android applications using Android Studio and the Kotlin programming language.</P>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Master Class On Artificial Intelligence</h5>
-                            <p class="mb-2"><strong>Pantech Solution</strong></p>
-                            <P>I learned the fundamentals of AI development using machine learning, neural networks, and the Python programming language.</P>
-                        </div>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="image-wrapper">
+                        <img src="img/profile.jpg" alt="Pragadeeswaran P">
+                        <div class="image-overlay"></div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- Qualification End -->
-
-
-    <!-- Skill Start -->
-    <div class="container-fluid py-5" id="skill">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">HTML</h6>
-                            <h6 class="font-weight-bold">75%</h6>
+                <div class="about-text" data-aos="fade-left">
+                    <p class="lead-text">
+                        I am a <strong>Junior Software Engineer</strong> currently working as a <strong>Java Full-Stack Developer</strong> 
+                        at Zensar Technologies. I build scalable enterprise applications, RESTful APIs, and manage database systems using 
+                        Spring Boot, MySQL, and PostgreSQL.
+                    </p>
+                    <p>
+                        In my professional role, I develop microservices architecture, implement backend logic, and maintain code quality 
+                        using tools like <strong>SonarQube and Snyk</strong>. I actively participate in agile ceremonies, code reviews, 
+                        and collaborate with cross-functional teams to deliver production-level applications.
+                    </p>
+                    <p>
+                        Beyond my professional work, I'm passionate about exploring new technologies. I've developed personal projects 
+                        using <strong>Python, Android (Kotlin/Java), and Flutter</strong>, building mobile applications and full-stack solutions. 
+                        These hands-on projects demonstrate my ability to quickly learn and adapt to different technology stacks while 
+                        following clean coding practices and modern development patterns.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <span class="info-label">Name</span>
+                                <span class="info-value">Pragadeeswaran P</span>
+                            </div>
                         </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <div>
+                                <span class="info-label">Birthday</span>
+                                <span class="info-value">26 May 2004</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">CSS</h6>
-                            <h6 class="font-weight-bold">75%</h6>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <span class="info-label">Degree</span>
+                                <span class="info-value">BTech IT</span>
+                            </div>
                         </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="info-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <span class="info-label">Position</span>
+                                <span class="info-value">Full-Stack Developer</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Java</h6>
-                            <h6 class="font-weight-bold">75%</h6>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span class="info-label">Phone</span>
+                                <span class="info-value">+91 9363260454</span>
+                            </div>
                         </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">C</h6>
-                            <h6 class="font-weight-bold">75%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Python</h6>
-                            <h6 class="font-weight-bold">80%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Kotlin</h6>
-                            <h6 class="font-weight-bold">40%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-bold" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="info-label">Email</span>
+                                <span class="info-value">pragadeeswaranp9791@gmail.com</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Skill End -->
+    </section>
+    <!-- About Section End -->
 
 
-    
-   
-    <!-- Blog Start -->
-    <div class="container-fluid pt-5" id="blog">
+    <!-- Experience Section Start -->
+    <section class="experience-section" id="experience">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Blog</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Latest Blog</h1>
+            <div class="section-title" data-aos="fade-up">
+                <span class="title-bg">Journey</span>
+                <h2>Education & <span>Experience</span></h2>
+                <div class="title-line"></div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/certificate1.png" alt="">
+            <div class="experience-content">
+                <div class="timeline-section" data-aos="fade-right">
+                    <h3 class="timeline-heading">
+                        <i class="fas fa-graduation-cap"></i> Education
+                    </h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2021 - 2025</span>
+                                <h4>BTech in Information Technology</h4>
+                                <p class="timeline-institution">SRM Valliammai Engineering College</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2020 - 2021</span>
+                                <h4>Higher Secondary (12th)</h4>
+                                <p class="timeline-institution">Saratha Matric Higher Secondary School</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">2018 - 2019</span>
+                                <h4>Secondary School (10th)</h4>
+                                <p class="timeline-institution">Saratha Matric Higher Secondary School</p>
+                            </div>
+                        </div>
                     </div>
-                    <h5 style="text-align: center;" class="font-weight-medium mb-4">Android App development</h5>
                 </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/Certificate2.png" alt="">
+
+                <div class="timeline-section" data-aos="fade-left">
+                    <h3 class="timeline-heading">
+                        <i class="fas fa-briefcase"></i> Experience
+                    </h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Zensar Technologies</h4>
+                                <span class="timeline-date" id="total-duration"></span>
+                                <p class="timeline-institution">Chennai, Tamil Nadu, India (Hybrid)</p>
+                                
+                                <!-- Full-time Role -->
+                                <div class="role-item">
+                                    <h5 class="role-title">Junior Software Engineer</h5>
+                                    <div class="role-meta">
+                                        <span class="employment-type">Full-time</span>
+                                        <span class="role-duration" id="fulltime-duration"></span>
+                                    </div>
+                                </div>
+
+                                <!-- Internship Role -->
+                                <div class="role-item">
+                                    <h5 class="role-title">Full Stack Java Developer</h5>
+                                    <div class="role-meta">
+                                        <span class="employment-type">Internship</span>
+                                        <span class="role-duration">Mar 2025 - Sep 2025 · 7 mos</span>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <h5 style="text-align: center;" class="font-weight-medium mb-4">IOT-Workshop</h5>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/Certificate3.png" alt="">
-                    </div>
-                    <h5 style="text-align: center;" class="font-weight-medium mb-4">Data Analytics-Workshop</h5>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/certificate4.png" alt="">
-                    </div>
-                    <h5 style="text-align: center;" class="font-weight-medium mb-4">AR/VR-Workshop</h5>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/certificate5.png" alt="">
-                    </div>
-                    <h5 style="text-align: center;" class="font-weight-medium mb-4">Artificial Intelligence</h5>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/certificate6.jpg" alt="">
-                    </div>
-                    <h5 style="text-align: center;" class="font-weight-medium mb-4">Python</h5>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Blog End -->
+    </section>
+    <!-- Experience Section End -->
+
+
+    <!-- Skills Section Start -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <span class="title-bg">Skills</span>
+                <h2>My <span>Skills</span></h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="skills-content">
+                <!-- Backend Technologies -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="skill-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h4>Java</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h4>Spring Boot</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h4>PostgreSQL</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                    <span class="skill-percentage">60%</span>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h4>MySQL</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                </div>
+
+
+                <!-- Frontend Technologies -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h4>HTML/CSS</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h4>JavaScript</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75"></div>
+                    </div>
+                    <span class="skill-percentage">75%</span>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h4>React.js</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="65"></div>
+                    </div>
+                    <span class="skill-percentage">65%</span>
+                </div>
+
+                <!-- Mobile Development -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h4>Flutter</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="70"></div>
+                    </div>
+                    <span class="skill-percentage">70%</span>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="450">
+                    <div class="skill-icon">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <h4>Android (Java/Kotlin)</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="72"></div>
+                    </div>
+                    <span class="skill-percentage">72%</span>
+                </div>
+
+                <!-- Other Technologies -->
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h4>Python</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="70"></div>
+                    </div>
+                    <span class="skill-percentage">70%</span>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="550">
+                    <div class="skill-icon">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <h4>GCP</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="55"></div>
+                    </div>
+                    <span class="skill-percentage">55%</span>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="skill-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h4>Git</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="82"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section End -->
+
+    <!-- Projects Section Start -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <span class="title-bg">Portfolio</span>
+                <h2>My <span>Projects</span></h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="projects-content">
+                <div class="project-card" data-aos="zoom-in">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop" alt="Enterprise Resource Management System">
+                        <div class="project-title-banner">
+                            <h3>Enterprise Resource Management</h3>
+                            <span class="project-category">TypeScript • Web Development</span>
+                        </div>
+                        <div class="project-overlay">
+                            <h3>Enterprise Resource Management System</h3>
+                            <p>Comprehensive ERP system built with TypeScript for managing enterprise resources, workflows, and business processes. Features include resource allocation, workflow automation, and real-time analytics dashboard.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Pragadee2605/Enterprise_Resource_Management_System" target="_blank" class="project-btn"><i class="fab fa-github"></i> View Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">ERP</span>
+                            <span class="tag">Enterprise</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&h=600&fit=crop" alt="Student Management System">
+                        <div class="project-title-banner">
+                            <h3>Student Management System</h3>
+                            <span class="project-category">React.js • Spring Boot • Full-Stack</span>
+                        </div>
+                        <div class="project-overlay">
+                            <h3>Student Management System</h3>
+                            <p>Full-stack application with React frontend and Spring Boot backend for managing student records, courses, and academic data. Includes features for attendance tracking, grade management, and course enrollment.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Pragadee2605/studentmanagementsystem-react-springboot-project" target="_blank" class="project-btn"><i class="fab fa-github"></i> View Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">React.js</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">Java</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=600&fit=crop" alt="Expense Tracker - Android">
+                        <div class="project-title-banner">
+                            <h3>Expense Tracker – Android</h3>
+                            <span class="project-category">Android • Finance </span>
+                        </div>
+                        <div class="project-overlay">
+                            <h3>Expense Tracker System – Android</h3>
+                            <p>Comprehensive expense management app with category-based tracking (Food, Travel, Investment, Insurance, etc.). Features pie charts and graphs for daily/monthly analysis, savings tracking, investment monitoring (Gold, Stock, SIP) with redemption, smart budget notifications at 50%, 70%, 100% usage, monthly summary alerts, and Google Drive backup/restore with SQLite.</p>
+                            <div class="project-links">
+                                <span class="project-btn" style="opacity: 0.7; cursor: default;"><i class="fas fa-lock"></i> Private</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Android</span>
+                            <span class="tag">Java/Kotlin</span>
+                            <span class="tag">SQLite</span>
+                            <span class="tag">Charts</span>
+                            <span class="tag">Google Drive API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop" alt="DevLife OS - Developer Productivity App">
+                        <div class="project-title-banner">
+                            <h3>DevLife OS</h3>
+                            <span class="project-category">Kotlin • Productivity</span>
+                        </div>
+                        <div class="project-overlay">
+                            <h3>DevLife OS – Developer Productivity App</h3>
+                            <p>Personal Android app solving real developer pain points: smart alarms that skip weekends/holidays, Jira ticket tracking with story points, OCR-based holiday upload, and world clock.</p>
+                            <div class="project-links">
+                                <span class="project-btn" style="opacity: 0.7; cursor: default;"><i class="fas fa-lock"></i> Private</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Kotlin</span>
+                            <span class="tag">MVVM</span>
+                            <span class="tag">ML Kit OCR</span>
+                            <span class="tag">SQLite</span>
+                            <span class="tag">Offline-First</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&h=600&fit=crop" alt="Expense Tracker - Flutter">
+                        <div class="project-title-banner">
+                            <h3>Expense Tracker – Flutter</h3>
+                            <span class="project-category">Flutter • Cross-Platform </span>
+                        </div>
+                        <div class="project-overlay">
+                            <h3>Expense Tracker System – Flutter</h3>
+                            <p>Cross-platform migration of Android expense tracker with identical features. Built with Flutter for iOS and Android compatibility. Includes category management, visual analytics (pie charts/graphs), investment tracking, budget notifications, monthly reports, and seamless Google Drive backup/restore. Demonstrates app modernization and cross-platform expertise.</p>
+                            <div class="project-links">
+                                <span class="project-btn" style="opacity: 0.7; cursor: default;"><i class="fas fa-lock"></i> Private</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Dart</span>
+                            <span class="tag">Cross-Platform</span>
+                            <span class="tag">SQLite</span>
+                            <span class="tag">Cloud Backup</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?w=800&h=600&fit=crop" alt="Attendance Management System">
+                        <div class="project-title-banner">
+                            <h3>Attendance Management System</h3>
+                            <span class="project-category">Web App • Email Automation</span>
+                        </div>
+                        <div class="project-overlay">
+                            <h3>Attendance Management System</h3>
+                            <p>Web-based attendance tracking system with automated email notifications for managing student/employee attendance. Features include real-time attendance marking, automatic report generation, email alerts for absences, and comprehensive analytics dashboard.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Pragadee2605/Attendance-Management-System-with-email-sending" target="_blank" class="project-btn"><i class="fab fa-github"></i> View Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">Email Integration</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section End -->
+
+    <!-- Contact Section Start -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <span class="title-bg">Connect</span>
+                <h2>Get In <span>Touch</span></h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always interested in hearing about new projects and opportunities. 
+                       Feel free to reach out if you want to discuss tech, projects, or just say hi!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>pragadeeswaranp9791@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 9363260454</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Tamil Nadu, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="https://www.linkedin.com/in/pragadeeswaran-p-0669a9234" target="_blank" class="social-btn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Pragadee2605" target="_blank" class="social-btn">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm" action="https://formsubmit.co/pragadeeswaranp9791@gmail.com" method="POST">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_subject" value="New Portfolio Contact Message!">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://pragadee2605.github.io/Web-Portfolio/#contact">
+                        
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+
+
     <!-- Footer Start -->
-    <div class="container-fluid bg-primary1 text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="container text-center py-5"> 
-            <h5 style="color: azure;">Personal Portfolio</h5>
-            <a href="https://www.linkedin.com/in/pragadeeswaran-p-0669a9234" target="_blank">
-                <img src="img/icons3.png" alt="LinkedIn" class="linkedin-icon">
-            </a>
-            <a href="https://github.com/Pragadee2605" target="_blank">
-                <img src="img/icon2.png" alt="github" class="github">
-            </a>
-            <a href="https://www.instagram.com/__pragadees__2605/" target="_blank">
-                <img src="img/icon1.png" alt="instagram" class="instagram">
-            </a>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Pragadeeswaran<span>.</span></h2>
+                    <p>Building innovative solutions with passion and dedication</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> pragadeeswaranp9791@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 9363260454</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Tamil Nadu, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Designed by Pragadeeswaran</p>
+            </div>
         </div>
-    </div>
+    </footer>
     <!-- Footer End -->
 
-    <!-- Scroll to Bottom -->
-    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
+    <!-- Scroll to Top Button -->
+    <a href="#home" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="lib/typed/typed.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
@@ -300,12 +707,8 @@
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <!-- Modern Javascript -->
+    <script src="js/modern.js"></script>
 </body>
 
 </html>
