@@ -233,20 +233,8 @@
     }
 
     // ============ Contact Form Handling ============
-    // Form submission is handled by FormSubmit.co
-    // No custom JavaScript needed - the form will submit directly to the email service
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            // Let the form submit naturally to FormSubmit
-            // Show loading state
-            const submitBtn = contactForm.querySelector('.submit-btn');
-            if (submitBtn) {
-                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-                submitBtn.disabled = true;
-            }
-        });
-    }
+    // Form submission is handled by FormSubmit.co - let it work naturally
+    // No JavaScript interference needed
 
     // ============ Lightbox Configuration ============
     if (typeof lightbox !== 'undefined') {
