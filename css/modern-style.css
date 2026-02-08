@@ -445,11 +445,278 @@ section {
 
 /* ============ Experience Section ============ */
 .experience-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
+.experience-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    padding: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: var(--transition);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.experience-card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 15px 50px rgba(108, 99, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Company Header */
+.company-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid rgba(108, 99, 255, 0.2);
+}
+
+.company-info h3.company-name {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.company-location {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.company-location i {
+    color: var(--accent-color);
+    margin-right: 0.5rem;
+}
+
+.total-duration {
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    background: var(--gradient-1);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: white;
+}
+
+.company-logo {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-1);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: white;
+    box-shadow: var(--shadow-md);
+}
+
+/* Role Section */
+.role-section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 15px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.role-section:last-child {
+    margin-bottom: 0;
+}
+
+.role-header {
+    margin-bottom: 1.5rem;
+}
+
+.role-title-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.role-title {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.role-title i {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.role-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.employment-badge {
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.employment-badge.full-time {
+    background: linear-gradient(135deg, #00D4FF 0%, #6C63FF 100%);
+    color: white;
+}
+
+.employment-badge.internship {
+    background: linear-gradient(135deg, #FF6584 0%, #FFAA00 100%);
+    color: white;
+}
+
+.role-duration {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Tech Stack */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.tech-badge {
+    padding: 0.5rem 1rem;
+    background: rgba(108, 99, 255, 0.1);
+    border: 1px solid rgba(108, 99, 255, 0.3);
+    border-radius: 8px;
+    font-size: 0.85rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.tech-badge:hover {
+    background: rgba(108, 99, 255, 0.2);
+    transform: translateY(-2px);
+    border-color: var(--primary-color);
+}
+
+/* Responsibilities */
+.responsibilities {
+    margin-top: 1.5rem;
+}
+
+.responsibilities h5 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.responsibilities h5 i {
+    color: var(--accent-color);
+}
+
+.achievement-list {
+    list-style: none;
+    padding: 0;
+}
+
+.achievement-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.achievement-list li:hover {
+    background: rgba(108, 99, 255, 0.05);
+    transform: translateX(5px);
+}
+
+.achievement-list li i {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+}
+
+.achievement-list li span {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.achievement-list li strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* Impact Metrics */
+.impact-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.metric-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(0, 212, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    transition: var(--transition);
+}
+
+.metric-item:hover {
+    background: rgba(0, 212, 255, 0.1);
+    transform: scale(1.05);
+}
+
+.metric-item i {
+    font-size: 2rem;
+    color: var(--accent-color);
+}
+
+.metric-item div {
+    display: flex;
+    flex-direction: column;
+}
+
+.metric-item strong {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.metric-item span {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+/* Old Timeline Styles - Keep for backward compatibility if needed */
 .timeline-heading {
     display: flex;
     align-items: center;
@@ -1285,7 +1552,6 @@ textarea.form-control {
     }
 
     .about-content,
-    .experience-content,
     .contact-content {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -1297,6 +1563,27 @@ textarea.form-control {
 
     .title-bg {
         font-size: 4rem;
+    }
+
+    /* Experience Section Responsive */
+    .experience-card {
+        padding: 2rem;
+    }
+
+    .company-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .company-logo {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+
+    .impact-metrics {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -1328,6 +1615,42 @@ textarea.form-control {
         flex-direction: column;
         text-align: center;
     }
+
+    /* Experience Section Mobile */
+    .experience-card {
+        padding: 1.5rem;
+    }
+
+    .role-section {
+        padding: 1.5rem;
+    }
+
+    .role-title-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .role-title {
+        font-size: 1.2rem;
+    }
+
+    .tech-stack {
+        gap: 0.5rem;
+    }
+
+    .tech-badge {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .achievement-list li {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .metric-item {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1347,5 +1670,18 @@ textarea.form-control {
     .btn-secondary {
         padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
+    }
+
+    /* Experience Section Small Mobile */
+    .company-info h3.company-name {
+        font-size: 1.5rem;
+    }
+
+    .role-title {
+        font-size: 1.1rem;
+    }
+
+    .responsibilities h5 {
+        font-size: 1rem;
     }
 }
