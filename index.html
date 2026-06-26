@@ -482,8 +482,69 @@
                 <h2>My <span>Projects</span></h2>
                 <div class="title-line"></div>
             </div>
+
+            <div class="project-filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="*">All</button>
+                <button class="filter-btn" data-filter=".mobile-project">Mobile</button>
+                <button class="filter-btn" data-filter=":not(.mobile-project)">Web</button>
+            </div>
+
             <div class="projects-content">
-                <div class="project-card" data-aos="zoom-in">
+                <!-- Vision XPlayer -->
+                <div class="project-card mobile-project" data-aos="zoom-in">
+                    <div class="project-image">
+                        <div class="mobile-mockup">
+                            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=400&h=800&fit=crop" alt="Vision XPlayer">
+                        </div>
+                        <div class="project-title-banner">
+                            <h3>Vision XPlayer</h3>
+                            <span class="project-category">Android • Media Player</span>
+                        </div>
+                        <div class="project-overlay">
+                            <h3>Vision XPlayer</h3>
+                            <p>Premium Media Player with custom-built audio/video engine. Supports 4K playback, subtitle synchronization, and advanced equalizer settings.</p>
+                            <div class="project-links">
+                                <span class="project-btn"><i class="fas fa-lock"></i> Private Repo</span>
+                                <a href="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800" data-lightbox="xplayer" data-title="Vision XPlayer - Interface" class="project-btn"><i class="fas fa-images"></i> UI Gallery</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Audio and Video Support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- File Manager -->
+                <div class="project-card mobile-project" data-aos="zoom-in" data-aos-delay="50">
+                    <div class="project-image">
+                        <div class="mobile-mockup">
+                            <img src="https://images.unsplash.com/photo-1544396821-4dd40b938ad3?w=400&h=800&fit=crop" alt="File Reader & Writer">
+                        </div>
+                        <div class="project-title-banner">
+                            <h3>File Manager Pro</h3>
+                            <span class="project-category">Android • Productivity</span>
+                        </div>
+                        <div class="project-overlay">
+                            <h3>File Reader & Writer</h3>
+                            <p>Full-fledged office suite for mobile. Create, edit, and view .docx, .xlsx, and .txt files with high fidelity and cloud sync capabilities.</p>
+                            <div class="project-links">
+                                <span class="project-btn"><i class="fas fa-code"></i> Internal Tool</span>
+                                <a href="https://images.unsplash.com/photo-1544396821-4dd40b938ad3?w=800" data-lightbox="filemanager" data-title="File Manager Pro - Document Editor" class="project-btn"><i class="fas fa-eye"></i> Screenshots</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">File System</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
                     <div class="project-image">
                         <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop" alt="Enterprise Resource Management System">
                         <div class="project-title-banner">
@@ -492,7 +553,7 @@
                         </div>
                         <div class="project-overlay">
                             <h3>Enterprise Resource Management System</h3>
-                            <p>Comprehensive ERP system built with TypeScript for managing enterprise resources, workflows, and business processes. Features include resource allocation, workflow automation, and real-time analytics dashboard.</p>
+                            <p>Comprehensive ERP system built with TypeScript for managing enterprise resources, workflows, and business processes.</p>
                             <div class="project-links">
                                 <a href="https://github.com/Pragadee2605/Enterprise_Resource_Management_System" target="_blank" class="project-btn"><i class="fab fa-github"></i> View Code</a>
                             </div>
@@ -502,21 +563,20 @@
                         <div class="project-tags">
                             <span class="tag">TypeScript</span>
                             <span class="tag">ERP</span>
-                            <span class="tag">Enterprise</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="150">
                     <div class="project-image">
                         <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&h=600&fit=crop" alt="Student Management System">
                         <div class="project-title-banner">
                             <h3>Student Management System</h3>
-                            <span class="project-category">React.js • Spring Boot • Full-Stack</span>
+                            <span class="project-category">React.js • Spring Boot</span>
                         </div>
                         <div class="project-overlay">
                             <h3>Student Management System</h3>
-                            <p>Full-stack application with React frontend and Spring Boot backend for managing student records, courses, and academic data. Includes features for attendance tracking, grade management, and course enrollment.</p>
+                            <p>Full-stack application with React frontend and Spring Boot backend for managing student records and courses.</p>
                             <div class="project-links">
                                 <a href="https://github.com/Pragadee2605/studentmanagementsystem-react-springboot-project" target="_blank" class="project-btn"><i class="fab fa-github"></i> View Code</a>
                             </div>
@@ -526,102 +586,103 @@
                         <div class="project-tags">
                             <span class="tag">React.js</span>
                             <span class="tag">Spring Boot</span>
-                            <span class="tag">Java</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+                <!-- Rent Management -->
+                <div class="project-card mobile-project" data-aos="zoom-in" data-aos-delay="200">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop" alt="Rent Management System - Android">
+                        <div class="mobile-mockup">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=800&fit=crop" alt="Rent Management System">
+                        </div>
                         <div class="project-title-banner">
                             <h3>Rent Management System</h3>
-                            <span class="project-category">Android • Real Estate Management</span>
+                            <span class="project-category">Android • Java</span>
                         </div>
                         <div class="project-overlay">
-                            <h3>Rent Management System – Android</h3>
-                            <p>Developed a secure Android app for rental management with homescreen lock protection. It lets users add rent entries, view monthly income, and track rental history. Data syncs automatically to Google Sheets via the Drive API for cloud backup and easy access.</p>
+                            <h3>Rent Management System</h3>
+                            <p>Secure Android app for rental management with Google Sheets sync and homescreen lock protection.</p>
                             <div class="project-links">
-                                <span class="project-btn" style="opacity: 0.7; cursor: default;"><i class="fas fa-lock"></i> Private (In Use)</span>
+                                <span class="project-btn"><i class="fas fa-lock"></i> Private</span>
                             </div>
                         </div>
                     </div>
                     <div class="project-info">
                         <div class="project-tags">
                             <span class="tag">Android</span>
-                            <span class="tag">Java</span>
                             <span class="tag">Google Sheets API</span>
-                            <span class="tag">Drive API</span>
-                            <span class="tag">Security</span>
-                            <span class="tag">Excel Integration</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
+                <!-- Expense Tracker -->
+                <div class="project-card mobile-project" data-aos="zoom-in" data-aos-delay="250">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&h=600&fit=crop" alt="Expense Tracker - Android">
+                        <div class="mobile-mockup">
+                            <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&h=800&fit=crop" alt="Expense Tracker">
+                        </div>
                         <div class="project-title-banner">
-                            <h3>Expense Tracker – Android</h3>
-                            <span class="project-category">Android • Finance </span>
+                            <h3>Expense Tracker</h3>
+                            <span class="project-category">Android • Kotlin</span>
                         </div>
                         <div class="project-overlay">
-                            <h3>Expense Tracker System – Android</h3>
-                            <p>Comprehensive expense management app with category-based tracking (Food, Travel, Investment, Insurance, etc.). Features pie charts and graphs for daily/monthly analysis, savings tracking, investment monitoring (Gold, Stock, SIP) with redemption, smart budget notifications at 50%, 70%, 100% usage, monthly summary alerts, and Google Drive backup/restore with SQLite.</p>
+                            <h3>Expense Tracker System</h3>
+                            <p>Comprehensive expense management app with category-based tracking, pie charts, and smart budget notifications.</p>
                             <div class="project-links">
-                                <span class="project-btn" style="opacity: 0.7; cursor: default;"><i class="fas fa-lock"></i> Private</span>
+                                <span class="project-btn"><i class="fas fa-lock"></i> Private</span>
                             </div>
                         </div>
                     </div>
                     <div class="project-info">
                         <div class="project-tags">
                             <span class="tag">Android</span>
-                            <span class="tag">Java/Kotlin</span>
-                            <span class="tag">SQLite</span>
-                            <span class="tag">Charts</span>
-                            <span class="tag">Google Drive API</span>
+                            <span class="tag">Kotlin</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
+                <!-- DevLife OS -->
+                <div class="project-card mobile-project" data-aos="zoom-in" data-aos-delay="300">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=600&fit=crop" alt="DevLife OS - Developer Productivity App">
+                        <div class="mobile-mockup">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=800&fit=crop" alt="DevLife OS">
+                        </div>
                         <div class="project-title-banner">
                             <h3>DevLife OS</h3>
-                            <span class="project-category">Kotlin • Productivity</span>
+                            <span class="project-category">Kotlin • MVVM</span>
                         </div>
                         <div class="project-overlay">
-                            <h3>DevLife OS – Developer Productivity App</h3>
-                            <p>Personal Android app solving real developer pain points: smart alarms that skip weekends/holidays, Jira ticket tracking with story points, OCR-based holiday upload, and world clock.</p>
+                            <h3>DevLife OS</h3>
+                            <p>Developer productivity app: smart alarms, Jira ticket tracking, and OCR-based holiday upload.</p>
                             <div class="project-links">
-                                <span class="project-btn" style="opacity: 0.7; cursor: default;"><i class="fas fa-lock"></i> Private</span>
+                                <span class="project-btn"><i class="fas fa-lock"></i> Private</span>
                             </div>
                         </div>
                     </div>
                     <div class="project-info">
                         <div class="project-tags">
                             <span class="tag">Kotlin</span>
-                            <span class="tag">MVVM</span>
                             <span class="tag">ML Kit OCR</span>
-                            <span class="tag">SQLite</span>
-                            <span class="tag">Offline-First</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="500">
+                <!-- Expense Tracker Flutter -->
+                <div class="project-card mobile-project" data-aos="zoom-in" data-aos-delay="350">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&h=600&fit=crop" alt="Expense Tracker - Flutter">
+                        <div class="mobile-mockup">
+                            <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&h=800&fit=crop" alt="Expense Tracker - Flutter">
+                        </div>
                         <div class="project-title-banner">
                             <h3>Expense Tracker – Flutter</h3>
-                            <span class="project-category">Flutter • Cross-Platform </span>
+                            <span class="project-category">Flutter • Cross-Platform</span>
                         </div>
                         <div class="project-overlay">
-                            <h3>Expense Tracker System – Flutter</h3>
-                            <p>Cross-platform migration of Android expense tracker with identical features. Built with Flutter for iOS and Android compatibility. Includes category management, visual analytics (pie charts/graphs), investment tracking, budget notifications, monthly reports, and seamless Google Drive backup/restore. Demonstrates app modernization and cross-platform expertise.</p>
+                            <h3>Expense Tracker – Flutter</h3>
+                            <p>Cross-platform migration of Android expense tracker with identical features. Built with Flutter.</p>
                             <div class="project-links">
-                                <span class="project-btn" style="opacity: 0.7; cursor: default;"><i class="fas fa-lock"></i> Private</span>
+                                <span class="project-btn"><i class="fas fa-lock"></i> Private</span>
                             </div>
                         </div>
                     </div>
@@ -629,14 +690,11 @@
                         <div class="project-tags">
                             <span class="tag">Flutter</span>
                             <span class="tag">Dart</span>
-                            <span class="tag">Cross-Platform</span>
-                            <span class="tag">SQLite</span>
-                            <span class="tag">Cloud Backup</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="600">
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
                     <div class="project-image">
                         <img src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?w=800&h=600&fit=crop" alt="Attendance Management System">
                         <div class="project-title-banner">
@@ -645,7 +703,7 @@
                         </div>
                         <div class="project-overlay">
                             <h3>Attendance Management System</h3>
-                            <p>Web-based attendance tracking system with automated email notifications for managing student/employee attendance. Features include real-time attendance marking, automatic report generation, email alerts for absences, and comprehensive analytics dashboard.</p>
+                            <p>Web-based attendance tracking system with automated email notifications.</p>
                             <div class="project-links">
                                 <a href="https://github.com/Pragadee2605/Attendance-Management-System-with-email-sending" target="_blank" class="project-btn"><i class="fab fa-github"></i> View Code</a>
                             </div>
@@ -654,7 +712,6 @@
                     <div class="project-info">
                         <div class="project-tags">
                             <span class="tag">HTML</span>
-                            <span class="tag">Email Integration</span>
                             <span class="tag">Automation</span>
                         </div>
                     </div>
@@ -706,11 +763,11 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="lib/typed/typed.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Modern Javascript -->
